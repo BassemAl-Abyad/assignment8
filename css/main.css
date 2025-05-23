@@ -1,0 +1,418 @@
+/* MAIN */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* FONTS */
+
+.font-montserrat-12-big {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-style: normal;
+  color: #9fa3a7;
+}
+
+.font-arvo-22 {
+  font-family: "Arvo", serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+}
+.font-arvo-22-w {
+  font-family: "Arvo", serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+}
+.font-arvo-22-s {
+  font-family: "Arvo", serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+.font-arvo-32 {
+  font-family: "Arvo", serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+}
+.font-arvo-48 {
+  font-family: "Arvo", serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+}
+
+.font-open-sans-14 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #9fa3a7;
+}
+.font-open-sans-14-l {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #27b9c2;
+}
+.font-open-sans-14-w {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #fff;
+}
+.font-open-sans-12 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-variation-settings: "wdth" 100;
+  color: #ffc80a;
+  text-decoration: none;
+}
+.font-open-sans-12-s {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-variation-settings: "wdth" 100;
+  color: #27b9c2;
+  text-decoration: none;
+}
+.font-open-sans-12-w {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-variation-settings: "wdth" 100;
+  color: #fff;
+  text-decoration: none;
+}
+.font-open-sans-10 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-variation-settings: "wdth" 100;
+  color: #fff;
+  text-decoration: none;
+}
+.font-open-sans-8 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-variation-settings: "wdth" 100;
+  color: #fff;
+}
+
+/* BODY */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "iphone iphone rotary rotary"
+    "keyboard imac imac icloud"
+    "games experience experience icloud"
+    "twitter m-experience display display";
+  height: 100vh;
+}
+
+/* iphone */
+
+.iphone {
+  grid-area: iphone;
+  background-color: #fff;
+}
+.iphone-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 5%;
+}
+.iphone-left {
+  width: 32%;
+}
+.iphone-right {
+  width: 50%;
+}
+.iphone-left > * {
+  padding: 10px 0;
+  line-height: 1.5;
+}
+.iphone-right img {
+  width: 74%;
+  margin-top: 50px;
+  margin-left: 70px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* rotary */
+.rotary {
+  grid-area: rotary;
+  background-color: #f7f8f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.rotary-container > * {
+  padding: 10px 0;
+}
+.rotary-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15%;
+}
+
+/* keyboard */
+.keyboard {
+  grid-area: keyboard;
+  background-color: #f05638;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.keyboard-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5;
+  padding: 10%;
+}
+.keyboard-container > * {
+  padding: 10px 0;
+}
+.keyboard-img img {
+  max-width: 100%;
+}
+.keyboard-main h3 {
+  padding: 0 5%;
+}
+
+/* imac */
+.imac {
+  grid-area: imac;
+  background-color: #ffffff;
+}
+.imac-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10% 0;
+}
+.imac-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.imac-img {
+}
+.imac-left img {
+  max-width: 100%;
+}
+.imac-head {
+  margin-left: 26%;
+}
+.imac-main h3 {
+  padding: 0 26%;
+}
+.imac-right {
+  width: 50%;
+}
+
+.imac-left > * {
+  padding: 10px 0;
+}
+
+/* icloud */
+.icloud {
+  grid-area: icloud;
+  background-color: #8f76bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icloud-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5;
+}
+.icloud-img {
+  border-radius: 50%;
+  background-color: #8166b0;
+  padding: 40px 0;
+}
+.icloud-img img {
+  max-width: 65%;
+}
+.icloud-img-text-top span {
+  padding: 2px 13px 1px 30px;
+  border-radius: 60px;
+  background-color: hsla(0, 0%, 100%, 0.08);
+  background-image: url(../img/flag.png);
+  background-position: 11px 50%;
+  background-size: 12px;
+  background-repeat: no-repeat;
+}
+.icloud-link {
+  padding: 20px 0;
+}
+.icloud-button {
+  padding: 18px 30px;
+  border-radius: 50px;
+  background-color: #ffc80a;
+  letter-spacing: 2.4px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* games */
+.games {
+  grid-area: games;
+  background-color: #f7f8f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.games-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+.games-img img {
+  max-width: 80%;
+}
+
+/* experience */
+.experience {
+  grid-area: experience;
+  background-color: #93b6b7;
+}
+.experience-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.experience-bg {
+  background-image: url(../img/ux.png);
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+}
+.experience-img img {
+  max-width: 100%;
+}
+.experience-minicaps {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: #fa684f;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* twitter */
+.twitter {
+  grid-area: twitter;
+  background-color: #38d5f4;
+}
+.twitter-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 240px;
+  height: 240px;
+  padding-right: 34px;
+  padding-left: 34px;
+  border-radius: 50%;
+  background-color: #35cfed;
+}
+
+/* m-experience */
+.m-experience {
+  grid-area: m-experience;
+  background-color: #f7f8f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.m-experience-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.m-experience-container > * {
+  padding: 5px 50px;
+}
+.m-experience-minicaps span{
+
+  background-color: #7bc424;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+/* display */
+.display {
+  grid-area: display;
+  background-color: #2c2c2c;
+}
+.display-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.display-img img {
+  max-width: 100%;
+}
